@@ -5,8 +5,8 @@
         public int Id { get; set; }
         public string NombreAutor { get; set; }
 
-        public ICollection<Libro> Libros { get; set; }
-        = new List<Libro>();
+        // relación uno a muchos
+        public List<Libro> Libros { get; set; } = new List<Libro>();
 
     }
 }
