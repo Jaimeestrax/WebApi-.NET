@@ -4,3 +4,12 @@ GET {{Biblioteca_HostAddress}}/api/autores
 Accept: application/json
 
 ###
+POST {{Biblioteca_HostAddress}}/api/autores
+Content-Type: application/json
+{
+  "nombreAutor": "Manuel",
+  "libros": [
+    { "tituloLibro": "2 Gotas de Agua", "generoLibro": "Novela", "anio": 2002 },
+    { "tituloLibro": "Lluvia", "generoLibro": "Terror", "anio": 1981 }
+  ]
+}
